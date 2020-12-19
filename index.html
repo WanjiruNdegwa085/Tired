@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GOOA Company Limited</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer></script>
+  <script src="js/index.js"></script>
+  <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">GOOA Company Ltd.</a>
+      <a class="navbar-brand" href="#"><img src="images/shipping.png" class="img-responsive" alt="COmpany Logo"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary py-5 mb-5">
+      <div id="header-background">
+          <div class="container h-100">
+              <div class="row h-100 align-items-center">
+                  <div class="col-lg-12">
+                      <h1 class="display-4 text-white mt-5 mb-2">GOOA World Freighters</h1>
+                      <p class="lead mb-5 text-white-50"><i>We believe in Quality and Efficiency</i></p>
+                      <p>About us, GOOA  WORLD  FREIGHTERS  LIMITED  is  a  private  limited  company  registered  in Kenya  Under  the  Kenya  Company  Registration  Act.  Rooted  in  the  <b>Logistics  general supplies  industry,</b>  As  one  of  the  logistics  company  in  the  region.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </header>
+    <div class="more">
+        <div class="container h-100">
+        <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+        <h1>More About Us</h1>
+        <h3>Our Vision </h3>
+        <p>To provide excellent and quality services to the full satisfaction of our client by offer-ing best professional engineering practice and sustainable solutions. </p>
+        <h3>Our Mission</h3>
+        <p>To  provide  the  highest  quality  of  service  to  our  clients,  ensure  long-term  profitability, increase shareholder value, provide career opportunities, and continuously support the betterment of the community.</p>
+        <h3>Purpose</h3>
+        <p>To be a leader in the logistics & general supplies by providing enhanced services, relationship and profitability</p>
+        <h3>Our Strategy</h3>
+        <p>We  place  the  highest  value  on   teamwork  and  mutual   respect  among  our employees  and  our  clients.  Our  success  is  the  result  of  working  diligently  as  a team  to  do  each  job  right  as  well  as  maintaining  a  long-term  perspective  and integrity in the face of daily pressures while ensuring excellence and satisfaction in our product and service.</p>
+
+        </div>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2 id="about">What We Do? </h2>
+        <hr>
+        <p>Gooa World Freighters Limited provides: <ul> <li>safe  and reliable   long   and   short   Haulage</li> <li>  Bulk   and   bagged   Warehousing</li> <li>Clearing   and Forwarding</li> <li> Bulk Cargo Handling</li> <li>Air Cargo Services etc..</li></ul> for general and specialized cargo to a diverse industry segment like steel, cement, food and many more in the East African Region. </p>
+        <p>With our industry expertise, innovative technology and a modern approach to the real world  of  logistics,  our  customers  are  assured  that  their  cargo  is  in  safe  hands.  In addition  to  the  logistics  footprint  ,  the  company  plans  to  expand  its  trade  by  focusing on various aspects including General Supplies, supply of building and construction materials among others.</p>
+        </p>
+        <p></p>
+        <a class="btn btn-primary btn-lg" href="#">Get quotation</a>
+      </div>
+      <div class="col-md-4 mb-5">
+        <h2 id="contact">Contact Us</h2>
+        <p>We are always willing to help, Please contact us to discuss your requirements and how we can be of assistance to you</p>
+
+        <hr>
+        <address>
+          <strong>GOOA World Freighters Limited</strong>
+          <br>P.O. BOX – 4483-00100
+          <br>Nairobi, Kenya
+          <br>
+<!--          Div element for map-->
+          <div id="map">
+
+          </div>
+
+        </address>
+        <address>
+          <p><strong>Phone:</strong> +254 723 801 544</p>
+          <br>
+          <p>Email: </p>
+          <a href="mailto:#">info@gooaworldfreighters.co.ke</a>
+        </address>
+        <span><strong>Operation hours: </strong><b>Mon - Fri: 8:00am - 5:00pm | Sat: 9:00am - 1:00pm</b></span>
+      </div>
+    </div>
+
+    <div class="categories" id="services">
+    <h2 class="title">Services</h2><br>
+      <hr>
+        <small>Hover over image for further details</small>
+
+    <div class="small-container" id="category-section">
+        <div class="row">
+            <div class="col-3">
+                <div class="cat">
+                  <h5>Transport & Logistics</h5><br>
+                    <img src="images/overseas.jpg" alt="" >
+                </div>
+                <div class="details">
+                    <div class="content">
+                      <p>Our main functional areas are transportation, warehousing, and distribution. We have enough fleet of trucks and equipment that are operated by highly professional persons,who are ready to pick and deliver cargo of nearly any dimension and structure.</p>
+                        <a href="services.html#transport"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="cat">
+                <h5>Our Services</h5><br>
+                    <img src="images/services.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                        <p>We offer a range of value added services, such as: <ul> <li>free consulting to clients</li><li>transportation and logistics services</li></ul></p>
+                        <a href="services.html#services"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="cat">
+                  <h5>Road Freight</h5><br>
+                    <img src="images/road.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                      <p><strong>Reliable</strong> and <b>time-definite door-to-door</b>road transport. Our multi-modal infrastructure, which unites all products in one warehouse and distribution center, ensures the highest possible level of efficiency.</p>
+                        <a href="services.html#road"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="cat">
+                  <h5>Customs Clearance </h5><br>
+                    <img src="images/logistics.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                      <p> Our professional staff are skilled in customs law, regulations and procedures for all countries in East Africa. We provide consultancy services based on our experience as well continuous development and training for our staff to ensure up to date knowledge of customs regulations..</p>
+                        <a href="services.html#customs"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="cat">
+                  <h5>General Supplies</h5><br>
+                    <img src="images/warehousing.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                      <p>Our aim is to provide cost efficient procurement on a larger scale, straight from the source & offer supply solutions in the most demanding environments where lead times and supply locations are challenging.</p>
+                        <a href="services.html#supplies"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="cat">
+                  <h5>General Office Suppliers</h5><br>
+                    <img src="images/office.jpg" alt="">
+                </div>
+                <div class="details">
+                  <p style="color: white">We offer a wide range of Office systems and chairs that are flexible, dynamic and ergonomic. <br>Stationery Sell and Supply</p>
+                    <div class="content">
+                        <a href="services.html#office"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="cat">
+                  <h5>Printing Services</h5><br>
+                    <img src="images/printing.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                      <p> This unit is involved in provision of expert computer-related services with efficiency. This is an express service where binding is done ‘As-u- wait’. Off-press binding of printed matter e.g. receipts books</p>
+                        <a href="services.html#printing"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="cat">
+                  <h5>Advertising and Branding</h5><br>
+                    <img src="images/advertising.jpg" alt="Air Freight">
+                </div>
+                <div class="details">
+                    <div class="content">
+                      <p>Gooa World Freighters Limited’s Marketing division has qualified staff members with experience in branding and advertising, which includes Graphic design and printing</p>
+                        <a href="services.html#advertising"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="cat">
+                  <h5>Corporate Advertising and Branding</h5><br>
+                    <img src="images/customsbrokerage.jpg" alt="">
+                </div>
+                <div class="details">
+                    <div class="content">
+                      <p> This unit is involved in provision of expert computer-related services with efficiency. This is an express service where binding is done ‘As-u- wait’. Off-press binding of printed matter e.g. receipts books</p>
+                        <a href="services.html#corporate"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="cat">
+                  <h5>Supply of Agricultural Products</h5><br>
+                    <img src="images/agriculture.jpg" alt="Air Freight">
+                </div>
+                <div class="details">
+                    <div class="content">
+                      <p>We deal in general supplies, distribution, wholesale and retail of all types of Agricultural products including Vegetables, Fruits and dry cereals produce such as maize, beans, wheat, soya, millet, sorghum, rice, peas, grams among others to NGO'S , Government institutions, Schools, Private Companies, Hotels and Individuals.</p>
+                        <a href="services.html#agriculture"><h2>Read more</h2></a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--CLient Reviews-->
+    <!-- /.row -->
+
+    <div class="row">
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://placehold.it/300x200" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Client Name</h4>
+            <p class="card-text">content</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://placehold.it/300x200" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Client Name</h4>
+            <p class="card-text">content</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://placehold.it/300x200" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Client Name</h4>
+            <p class="card-text">content</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container-footer">
+      <p class="m-0 text-center text-white">Copyright &copy; GOOA 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
